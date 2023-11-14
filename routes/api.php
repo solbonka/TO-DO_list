@@ -5,7 +5,7 @@ use App\Http\Controllers\API\UserController;
 use Illuminate\Support\Facades\Route;
 
 // Получение списка всех заметок(для админа)
-Route::get('/allNotes', [NoteController::class, 'getAll'])->middleware('isAdmin');
+Route::get('/all-notes', [NoteController::class, 'getAll'])->middleware('isAdmin');
 
 // Получение списка заметок(для пользователя)
 Route::get('/notes/', [NoteController::class, 'getMy']);
